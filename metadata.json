@@ -1,0 +1,6 @@
+{
+  "name": "FORMA Atelier — Interior Architecture",
+  "description": "Interior architecture and bespoke spaces designed around the way you live. High-end residential and hospitality atelier.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

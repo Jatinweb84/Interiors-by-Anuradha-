@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-canvas: #141312;
+  --color-canvas-light: #FAF8F5;
+  --color-stone-muted: #8C857B;
+  --color-sand: #EAE5DE;
+  --color-bronze: #B39775;
+  --color-bronze-dark: #8C6D4C;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #141312;
+  color: #EBE6DF;
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #141312;
+}
+::-webkit-scrollbar-thumb {
+  background: #2E2A25;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B39775;
+}
+
+/* Architectural grain overlay */
+.texture-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Clean text selection */
+::selection {
+  background-color: #B39775;
+  color: #141312;
+}
+
+/* Image reveal clip path utilities */
+.clip-reveal-active {
+  clip-path: inset(0% 0% 0% 0%);
+  transition: clip-path 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clip-reveal-hidden {
+  clip-path: inset(100% 0% 0% 0%);
+}
